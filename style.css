@@ -40,10 +40,9 @@ ul{
 .searchbar{
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
-    border: 1px solid black;
 }
 
 .buttonbar{
@@ -56,19 +55,24 @@ ul{
 
 .contentbar{
     grid-area: content;
+    display: grid;
+    background-color: #D3D3D3;
+    grid-template-columns: 7fr 3fr;
 }
 
 .search{
     padding-left: 0;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-right: 20%;
+    height: 33%;
 }
 
 .searchfield:focus { 
     outline: none !important;
 }
 .searchfield{
-    border-radius: 20px;
-    border: 1px solid black;
-}
-.username, .notification{
-    
+    border:none;
+    padding-left: 1%;
 }
